@@ -1,0 +1,29 @@
+body{
+    background: #F7F7F9;
+}
+.box{
+    width: 400px;
+    height: 600px;
+    margin: 100px auto;
+    background: #fff;
+}
+.box .title{
+    color: #E63900;
+    width: 40px;
+    height: 80px;
+    /* padding: 40px 180px; */
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 180px;
+    margin-right: 180px;
+    border-bottom: 2px solid #E63900;
+}
+.box .input-group{
+    padding: 0 40px;
+    width: 400px;
+}
+.box a{
+    margin: 20px 40px;
+    width: 320px;
+}

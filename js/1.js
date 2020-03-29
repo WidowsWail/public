@@ -13,7 +13,8 @@
                 
                 axios({
                     method:'post',
-                    url:'https://www.easy-mock.com/mock/5e75826fb6cc11259439bf2e/pro/login',
+                    // url:'https://www.easy-mock.com/mock/5e75826fb6cc11259439bf2e/pro/login',
+                    url:'http://119.23.32.24/pro/login',
                     data:{
                         account:account,
                         password:password
@@ -26,11 +27,12 @@
                     if(response.data.state==0){
                         // alert("1")
                         // document.cookie = "state="+response.data.state
+                        localStorage.setItem('token',response.data.data.token)
                         window.location.href = "5.html"
                         console.log(response.data.state)
                         console.log(response.data.data)
                         // console.log(window.localStorage.getItem("token"))
-                        // localStorage.setItem('token',response.data.data.token)
+                        
                         // cookies.setItem('token',response.data.state)
                         
                         

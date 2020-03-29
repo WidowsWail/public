@@ -10,16 +10,16 @@ console.log(arr.map((v,i)=>(v*i)))
 //     desc[i].innerHTML = "1"
 //     console.log(desc[i].innerHTML)
 // }
-let token = window.localStorage.getItem("token");
+// let token = window.localStorage.getItem("token");
 // console.log(token)
 // axios.defaults.headers.common['token'] = token
 // axios.defaults.withCredentials=true
-console.log(document.cookie)
+// console.log(document.cookie)
 axios({
     method:'get',
     url:'https://www.easy-mock.com/mock/5e75826fb6cc11259439bf2e/pro/',
     // withCredentials: true,
-    headers:{'token':token}
+    // headers:{'token':token}
     // params:{
     //     account:account,
     //     password:password
